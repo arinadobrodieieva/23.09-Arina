@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форматування тексту в HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #16a085;
+            margin-top: 30px;
+        }
+        .demo-box {
+            background-color: #f9f9f9;
+            border-left: 5px solid #16a085;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        code, kbd {
+            background-color: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Демонстрація тегів форматування тексту в HTML</h1>
+    <p>Ця сторінка створена для наочного відображення того, як працюють різні теги форматування тексту.</p>
+
+    <h2>1. Фізичне та логічне форматування</h2>
+    <div class="demo-box">
+        <p>Це звичайний текст для порівняння.</p>
+        <p>Цей текст є <b>жирним (тег b)</b>, а цей — <strong>важливим / жирним (тег strong)</strong>.</p>
+        <p>Цей текст виділено <i>курсивом (тег i)</i>, а цей — є <em>акцентованим / курсивом (тег em)</em>.</p>
+        <p>Цей текст вважається <small>меншим за звичайний (тег small)</small>.</p>
+    </div>
+
+    <h2>2. Редагування та виділення тексту</h2>
+    <div class="demo-box">
+        <p>Ми можемо <mark>виділити текст маркером</mark> за допомогою тегу mark.</p>
+        <p>За допомогою тегів можна показати, що слово було <del>видалено</del> або <ins>додано нове</ins> в документ.</p>
+        <p>Також можна відобразити текст як <s>закреслений</s> (якщо він втратив актуальність).</p>
+    </div>
+
+    <h2>3. Математичні та хімічні індекси</h2>
+    <div class="demo-box">
+        <p><b>Верхній індекс (sup):</b> Площа кімнати дорівнює 25 м<sup>2</sup>. Формула квадрата: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.</p>
+        <p><b>Нижній індекс (sub):</b> Формула води — H<sub>2}O. Формула глюкози — C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>.</p>
+    </div>
+
+    <h2>4. Комп'ютерний код та цитати</h2>
+    <div class="demo-box">
+        <p>Для відображення назв клавіш використовують kbd: Натисніть <kbd>Ctrl</kbd> + <kbd>S</kbd> для збереження.</p>
+        <p>Короткий фрагмент коду в тексті: функція <code>console.log()</code> виводить дані в консоль.</p>
+        <p>Цитата всередині рядка: <q>Розум без книги, як птах без крил</q>.</p>
+        <p>Блочна цитата (blockquote):</p>
+        <blockquote>
+            "Логіка може привести вас від пункту А до пункту Б, а уява виведе вас куди завгодно." 
+            <br>— <i>Альберт Ейнштейн</i>
+        </blockquote>
+    </div>
+
+</body>
+</html>
